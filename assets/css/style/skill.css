@@ -1,0 +1,143 @@
+@charset "utf-8";
+ 
+
+
+.right {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3e83cc;
+}
+
+.right_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 8000px;
+  height: 100vh;
+  margin-left: 80vw;
+}
+
+/* skill */
+.item {
+  height: fit-content;
+  width: 600px;
+  margin-top: 10vh;
+}
+.skill_box {
+  margin: 0 auto;
+  width: 500px;
+  background-color: #fff ;
+  padding: 5px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 4px solid #000;
+}
+@media (max-width: 750px){
+  .skill_box {
+    width: 350px;
+  }
+}
+.item h1 {
+  font-family: var(--mainNum-font);
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 0;
+}
+.item ul .skill_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-top: 1px solid #000;
+}
+
+.item ul li .skill_title {
+  font-family: var(--mainNum-font);
+  width: 10%;
+  font-size: 1.3vw;
+  
+}
+.skill_title .sk_img {
+    width: 40px;
+    height: 40px;
+    background: url(../../img/icon.png);
+    background-size: 200px;
+    background-position: 0px -10px;
+    margin-left: 5px;
+}
+.skill_item:nth-child(2) .sk_img {background-position: 81px -8px;}
+.skill_item:nth-child(3) .sk_img {margin-left: 4px; background-position: 161px -8px;}
+.skill_item:nth-child(4) .sk_img {margin-left: 4px; background-position: 121px -8px;}
+.skill_item:nth-child(5) .sk_img {margin-left: 7px; background-position: 242px -8px;}
+
+.skill_item.f:nth-child(1) .sk_img {background-position: 0px -48px;}
+.skill_item.f:nth-child(2) .sk_img {background-position: 82px -48px;}
+.skill_item.f:nth-child(3) .sk_img {background-position: 158px -48px;}
+.skill_item.f:nth-child(4) .sk_img {background-position: 120px -48px;}
+
+.skill_item.b:nth-child(1) .sk_img {margin-left: 7px;  background-position: -6px 131px; background-size: 230px;}
+.skill_item.b:nth-child(2) .sk_img {margin-left: 0px; background-position: 226px -130px;background-size: 284px; width: 56px; height: 40px;}
+.skill_item.b:nth-child(3) .sk_img {margin-left: 0px; background-position: -100px 152px; background-size: 253px;}
+.skill_item.b:nth-child(2) .skill_title h2 {font-size: 11px;}
+.skill_item.b:nth-child(3) .skill_title h2 {font-size: 11px;}
+
+.skill_item.d:nth-child(1) .sk_img {background-position: -3px 87px; background-size: 220px;}
+.skill_item.d:nth-child(2) .sk_img {background-position: 174px 85px; background-size: 220px;}
+.skill_item.d:nth-child(3) .sk_img { background-position: -89px 86px; background-size: 220px;}
+
+.skill_title h2 {
+  width: 50px;
+  font-size: 13px;
+  text-align: center;
+}
+.item ul li p {
+  width: 90%;
+  font-size: 14px;
+  padding-left: 28px;
+}
+.item.b {
+  margin-top: 18vh;
+}
+
+/* moveBg */
+.moveBg {
+  width: 1vw;
+}
+.ground {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-image: url(../../img/ground.png); /* 배경 이미지 설정 */
+  background-repeat: repeat; /* 이미지를 가로, 세로로 반복 */
+  background-size: 60px 60px; /* 배경 이미지 크기를 지정, 20x20으로 반복 */
+  bottom: 0;
+}
+.grass {
+  position: absolute;
+  width: 270px;
+  height: 57px;
+  background: url(../../img/grass.png) no-repeat center / cover;
+  bottom: 59px;
+  left: -50vw
+}
+.fence {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background: url(../../img/fence.png) no-repeat center / cover;
+  bottom: 59px;
+  left: -40vw;
+}
+.cloudA {
+  position: absolute;
+  top: 20vh; left: -100vw;
+  width: 190px; height: 110px;
+  background: url(../../img/cloudB.png) no-repeat center;
+}
+.cloudB {
+  position: absolute;
+  top: 40vh; left: -80vw;
+  width: 190px; height: 110px;
+  background: url(../../img/cloudB.png) no-repeat center;
+}
+
+

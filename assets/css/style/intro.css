@@ -1,0 +1,187 @@
+@charset "utf-8";
+
+.intro__inner {
+    width: 100vw;
+    height: 100vh;
+    background-color: #4d97ff;
+}
+.cloud {
+    position: absolute;
+    top: 30vh; left: 20vw;
+    width: 150px; height: 110px;
+    background: url(../../img/cloudA.png) no-repeat center;
+}
+.cloud2 {
+    position: absolute;
+    top: 20vh; left: 80vw;
+    width: 190px; height: 110px;
+    background: url(../../img/cloudB.png) no-repeat center;
+}
+.ground {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    background-image: url(../../img/ground.png); /* 배경 이미지 설정 */
+    background-repeat: repeat; /* 이미지를 가로, 세로로 반복 */
+    background-size: 60px 60px; /* 배경 이미지 크기를 지정, 20x20으로 반복 */
+    bottom: 0;
+}
+
+.box {
+    position: relative;
+    width: 82px;
+    height: 80px;
+    background: url(../../img/lucky.png) no-repeat center/cover;
+    top: 45%; left: 50%;
+    transform: translate(-50%, -45%);
+    z-index: 100;
+}
+.box::after {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: url(../../img/box.png) no-repeat center/cover;
+     left: -76px;
+    z-index: 0;
+}
+.box::before {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 80px;
+    background: url(../../img/box.png) no-repeat center/cover;
+     left: 76px;
+    z-index: 0;
+}
+.star {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background:url(../../img/star.png) no-repeat center/cover;
+    top: 45%; left: 50%;
+    transform: translate(-50%, -45%);
+}
+.star2 {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background:url(../../img/star.png) no-repeat center/cover;
+    top: 20%; left: 50%;
+    transform: translate(-50%, -20%);
+    opacity: 0;
+    z-index: 1000;
+}
+
+.aboutbox {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 60vw ;
+    height: 60vh;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 4px solid #000000;
+    padding: 20px;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: 10000;
+}
+.aboutbox .comment{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.aboutbox .comment p {
+    font-size: 18px;
+    text-align: center;
+}
+.intro_me {
+    position: fixed;
+    background: url(../../img/run.png) no-repeat;
+    background-position: -374px 0px;
+    background-size: 448px 150px;
+    width: 110px;
+    height: 150px;
+    bottom: 58px;
+    left: 100px;
+}
+.intro_me.showDown {
+    animation: run 0.3s infinite;
+}
+.intro_me.showUp {
+    transform: scaleX(-1);
+    animation: run 0.3s infinite;
+}
+
+@keyframes run {
+    0% {
+        background-position: 0px 0px;
+    }
+    24.09% {
+        background-position: 0px 0px;   
+    }
+    25% {
+        background-position: -123px 0px ;
+    }
+    49.09% {
+        background-position: -123px 0px;
+    }
+    50% {
+        background-position: -247px 0px;
+    }
+    74.09% {
+        background-position: -247px 0px;
+    }
+    75% {
+        background-position: -0px 0px;
+    }
+    99.09% {
+        background-position: -0px 0px;
+    }
+    100% {
+        background-position: -0px 0px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+/* .intro__down {
+    margin-top: 16vw;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.intro__down .triangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -10%);
+    width: 0;
+    height: 0;
+    border-bottom: 30px solid none;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid #000;
+    animation: move 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite;
+}
+
+
+    @keyframes move {
+        0%   {top: 0%;}
+        50%  {top: 20px;}
+        100% {top: 0%;}
+    } */
+

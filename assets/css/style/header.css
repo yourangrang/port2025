@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+body::-webkit-scrollbar {
+    display: none;
+    
+  }
+.paraInfo {
+    position: fixed;
+    left: 20px;
+    bottom: 70px;
+    z-index: 1000;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 1.8;
+    border-radius: 10px;
+}
+.paraInfo li {
+    list-style: none;
+}
+
+ /* info */
+ .paraScroll {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 12px;
+    padding: 0px 20px;
+}
+
+/* header */
+#header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    z-index: 100000;
+
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 50%;
+    position: relative;
+}
+.header__logo h1 {
+    position: absolute;
+    left: 1vw;
+}
+.header__logo h1 em {
+    display: block;
+}
+
+
+/* me */
+.me {
+    position: fixed;
+    background: url(../../img/me.png) no-repeat;
+    background-position: -374px 0px;
+    background-size: 448px 150px;
+    width: 110px;
+    height: 150px;
+    bottom: 58px;
+    left: 15vw;
+    z-index: 10000000;
+    opacity: 0;
+  }
+  .me.showDown {
+      animation: run 0.3s infinite;
+  }
+  .me.showUp {
+      transform: scaleX(-1);
+      animation: run 0.3s infinite;
+  }
+  .me.on {
+    opacity: 1;
+  }
+  @keyframes run {
+      0% {
+          background-position: 0px 0px;
+      }
+      24.09% {
+          background-position: 0px 0px;   
+      }
+      25% {
+          background-position: -123px 0px ;
+      }
+      49.09% {
+          background-position: -123px 0px;
+      }
+      50% {
+          background-position: -247px 0px;
+      }
+      74.09% {
+          background-position: -247px 0px;
+      }
+      75% {
+          background-position: -0px 0px;
+      }
+      99.09% {
+          background-position: -0px 0px;
+      }
+      100% {
+          background-position: -0px 0px;
+      }
+      
+  }
+  
+
+
+
+/* nav */
+.header__nav {
+    margin: 15px 8px;
+}
+.header__nav li {
+    display: inline;
+}
+.header__nav li a {
+    text-transform: uppercase;
+    color: yellow;
+    padding: 10px;
+    position: relative;
+    font-weight: 700;
+    font-size: 17px;
+}
+.header__nav li a::before {
+    content: '';
+    width: calc(100% - 20px);
+    height: 2px;
+    position: absolute;
+    background-color: yellow;
+    left: 10px;
+    bottom: 5px;
+    transform: scale(0);
+    transition: all 0.3s;
+}
+.header__nav li a:hover::before {
+    transform: scale(1);
+}
+.header__nav__mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 7px;
+}
+.header__nav__mobile span {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: yellow;
+    margin-top: 18px;
+    border-radius: 20%;
+    position: relative;
+}
+.header__nav__mobile span::before {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: yellow;
+    border-radius: 20%;
+    right: 0;
+    top: 10px;
+    position: absolute;
+    transition: width 0.3s;
+}
+
+.header__nav__mobile span::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: yellow;
+    border-radius: 20%;
+    left: 0;
+    bottom: 10px;
+    position: absolute;
+    transition: width 0.3s;
+}
+
+
+@media (max-width: 800px){
+    .header__nav {
+        display: none;
+    }
+    .header__nav.show {
+        display: block;
+    }
+    .header__nav.show ul {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50px;
+        z-index: 10000;
+        min-width: 150px;
+    }
+    .header__nav.show li  {
+        display: block;
+        text-align: right;
+    }
+    .header__nav.show li a {
+        display: inline-block;
+        padding: 10px;
+    }
+    .header__nav.show + .header__nav__mobile span::before {
+        width: 20px;
+    }
+    .header__nav.show + .header__nav__mobile span::after {
+        width: 20px;
+    }
+    .header__nav__mobile {
+        display: block;
+    }
+
+}
+
+
+
+
+
