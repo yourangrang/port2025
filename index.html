@@ -6,12 +6,14 @@
     <title>port2025</title>
 
     <link rel="stylesheet" href="assets/css/style/header.css">
+    <link rel="stylesheet" href="assets/css/style/me.css">
     <link rel="stylesheet" href="assets/css/style/intro.css">
     <link rel="stylesheet" href="assets/css/style/skill.css">
     <link rel="stylesheet" href="assets/css/style/site.css">
     <link rel="stylesheet" href="assets/css/style/ani.css">
     <link rel="stylesheet" href="assets/css/style/script.css">
     <link rel="stylesheet" href="assets/css/style/contact.css">
+    <link rel="stylesheet" href="assets/css/style/main.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/vars.css">
     <link rel="stylesheet" href="assets/css/font.css">
@@ -36,24 +38,23 @@
                     <li><a href="#contact" class="contact">contact</a></li>
                 </ul>
             </nav>
-            <div class="me"></div>
             <div
-                class="header__nav__mobile"
-                id="headerToggle"
-                aria-controls="primary-menu"
-                aria-expanded="false"
-                role="button"
+            class="header__nav__mobile"
+            id="headerToggle"
+            aria-controls="primary-menu"
+            aria-expanded="false"
+            role="button"
             >
-                <span></span>
-            </div>
+            <span></span>
         </div>
     </div>
-    <!-- //header-->
-        <section id="intro">
-            <div class="intro__inner">
-                <div class="cloud"></div>
-                <div class="cloud2"></div>
-                <div class="ground"></div>
+</div>
+<!-- //header-->
+<section id="intro">
+    <div class="intro__inner">
+        <div class="cloud"></div>
+        <div class="cloud2"></div>
+        <div class="ground"></div>
                 <div class="box"></div>
                 <div class="star"></div>
                 <div class="star2"></div>
@@ -75,15 +76,15 @@
             </div>
         </section>
         <!-- //intro -->
-
-        <div class="right">
-            <div class="right_inner">
-                <div class="ground"></div>
-                <div class="right_wrap">
-                    <div class="moveBg">
-                        <div class="mountainA"></div>
-                        <div class="cloud"></div>
-                    </div>
+        
+            <div class="right">
+                    <div class="right_wrap">
+                        <div class="me"></div>
+                        <div class="moveBg">
+                            <div class="mountainA"></div>
+                            <div class="cloud"></div>
+                        </div>
+                        <div class="ground2"></div>
                         <article class="item" id="skill" >
                             <div class="skill_box">
                                 <h1>라이브러리</h1>
@@ -131,6 +132,7 @@
                             <div class="fence"></div>
                             <div class="cloudA"></div>
                         </div>
+                        <div class="ground2 b"></div>
                         <article class="item b">
                             <div class="skill_box">
                                 <h1>프론트</h1>
@@ -173,11 +175,6 @@
                                 </ul>
                             </div>
                         </article>
-                        <div class="moveBg">
-                            <div class="mountainA"></div>
-                            <div class="mountainB"></div>
-                            <div class="cloudB"></div>
-                        </div>
                         <article class="item">
                             <div class="skill_box">
                                 <h1>백엔드</h1>
@@ -236,12 +233,7 @@
                             </div>
                         </article>
                         <!-- site 소개시작 -->
-                        <div class="moveBg">
-                            <div class="mountainA"></div>
-                            <div class="mountainB"></div>
-                            <!-- <div class="grass"></div> -->
-                            <div class="cloudB"></div>
-                        </div>
+                        
                         <article class="item empty"></article>
                             <div class="item SiteCoding" >
                                 <div class="site_intro">
@@ -377,17 +369,36 @@
                                 </div>
                             </div>
                         </article>
-                </div>
+                        <article class="item d">
+                            <div class="pipe"></div>
+                        </article>
+                    </div>
             </div>
+            <!-- //right-->
+        <div class="down">
+            <div class="down_me"></div>
+            <section id="ani">
+                <div class="ani_box">
+                    <h1>큐브 애니메이션</h1>
+                    <div class="animation">
+                        <div class="cube">
+                            <div class="face front"></div>
+                            <div class="face back"></div>
+                            <div class="face left"></div>
+                            <div class="face right1"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                          </div>
+                    </div>
+                </div>
+            </section>
+            <!-- //ani -->
+            <section id="script"></section>
+            <!-- //script -->
         </div>
-         <!-- //right-->
-          
-         <section id="ani"></section>
-         <!-- //ani -->
-         <section id="script"></section>
-         <!-- //script -->
-         <section id="contact"></section>
-         <!-- //contact -->
+        <!-- //down -->
+            <section id="contact"></section>
+            <!-- //contact -->
 
     <!-- script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>

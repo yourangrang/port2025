@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+#ani {
+    width: 100vw;
+    height: 300vh;
+    background: #3e83cc;
+    padding: 40vw 0 ;
+}
+/* .ani_box {
+    position: absolute;
+    left: 40vw;
+    margin-top: 10vw;
+}
+
+.animation {
+    width: 700px;
+    height: 400px;
+    
+    background-color: rgb(230, 237, 245);
+}
+.cube {
+    animation: cube 7000ms linear infinite;
+    bottom: 0;
+    height: 100px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    transform-style: preserve-3d;
+    right: 0;
+    top: 0;
+    width: 100px;
+  }
+  
+  @keyframes cube {
+    100% {
+      transform: rotateY(360deg) rotateX(720deg) rotateZ(1080deg);
+    }
+  }
+  
+  .face {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .front {
+    background: #333;
+    transform: translateZ(50px);
+  }
+  
+  .back {
+    background: #444;
+    transform: translateZ(-50px);
+  }
+  
+  .left {
+    background: #555;
+    transform: translateX(-50px) rotateY(90deg);
+  }
+  
+  .right1 {
+    background: #666;
+    transform: translateX(50px) rotateY(90deg);
+  }
+  
+  .top {
+    background: #777;
+    transform: translateY(-50px) rotateX(90deg);
+  }
+  
+  .bottom {
+    background: #888;
+    transform: translateY(50px) rotateX(90deg);
+  } */
